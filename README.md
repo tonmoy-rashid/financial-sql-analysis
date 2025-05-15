@@ -1113,7 +1113,7 @@
 - After importing, verify the data using:
   ```sql
   SELECT * FROM CF;
-```
+  ```
 
 ### Calculating-Values-for-Cash-Flow-Statement-Part-1
 [Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Values-for-Cash-Flow-Statement-Part-1)
