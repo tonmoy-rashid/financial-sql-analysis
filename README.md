@@ -4,7 +4,7 @@
 
 **Author**: Tonmoy Rashid   
 **Created**: 2025-04-12  
-**Updated**: 2025-05-15
+**Updated**: 2025-05-15 
 **Resource**: [Google Drive](https://drive.google.com/file/d/1ieb6T_-3gyJ7F9i6OeyfG7jnWed6KnHb/view?usp=sharing)
 
 ---
@@ -62,18 +62,18 @@
 ## Installation
 
 ### Install Docker Desktop on Ubuntu
-[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Install-Docker-Desktop-on-Ubuntu)
+[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Install-Docker-Desktop-on-Ubuntu)  
 ### Install Microsoft SQL Server - Ubuntu based images Using Docker
-[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Install-Microsoft-SQL-Server)
+[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Install-Microsoft-SQL-Server)  
 
 ## Database Setup
 
 ### Create Database and Import Data from CSV
-[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-Database-and-Import-data-from-csv) 
+[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-Database-and-Import-data-from-csv)  
 ## SQL Queries
 
 ### Getting Started with SQL SELECT
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Getting-started-with-SQL-SELECT)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Getting-started-with-SQL-SELECT)  
 - **Purpose of Query 1**: Retrieve all records from the General Ledger
   - **Tables Used**: `GL`
   - **Columns Selected**: All (`*`)
@@ -99,7 +99,7 @@
   - **Use Case**: Understanding date-related dimensions for time-based analysis
 
 ### SELECT-specific-Columns-and-Rows
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SELECT-specific-Columns-and-Rows)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SELECT-specific-Columns-and-Rows)  
 - **Purpose of Query 1**: Retrieve only date and amount data from the General Ledger
   - **Tables Used**: `GL`
   - **Columns Selected**: `Date`, `Amount`
@@ -116,7 +116,7 @@
   - **Use Case**: Identifying significant transactions in a specific region/account
 
 ### Selecting-WHERE
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Selecting-WHERE)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Selecting-WHERE)  
 - **Purpose of Query 1**: Retrieve all transactions that occurred on a specific date
   - **Tables Used**: `GL`
   - **Filters Applied**: `Date = '2018-10-22'`
@@ -148,7 +148,7 @@
   - **Use Case**: Analyzing financial activity within a monthly period
 
 ### Time-Intelligence-Date-Month
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-Date-Month)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-Date-Month)  
 - **Purpose of Query 1**: Retrieve all records from the General Ledger while extracting year, month, and day from the date column
   - **Tables Used**: `GL`
   - **Columns Selected**: All (`*`), plus derived columns:
@@ -175,7 +175,7 @@
     - `SELECT [Group] FROM Categories` → "Group" is a reserved keyword.
 
 ### Time-Intelligence-Part-2-DATEPART
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-Part-2-DATEPART)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-Part-2-DATEPART)  
 - **Purpose of Query 1**: Extract detailed date attributes from the `calendar` table
   - **Tables Used**: `calendar`
   - **Columns Selected**:
@@ -195,7 +195,7 @@
   - For example, **January 1, 2018, was a Monday**, so `DATEPART(weekday, [date])` returned `2`, meaning Monday is treated as the second day of the week.
 
 ### Time-Intelligence-in-Action-Basic-Example
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-in-Action-Basic-Example)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Time-Intelligence-in-Action-Basic-Example)  
 - **Purpose of Query 1**: Retrieve sales transactions occurring in late November and December
   - **Tables Used**: `GL`
   - **Filters Applied**:
@@ -221,7 +221,7 @@
   - **Use Case**: Analyzing spending patterns on one of the biggest shopping days of the year
 
 ### SUM-and-Group
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SUM-and-Group)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SUM-and-Group)  
 - **Purpose of Query 1**: Summarize total transaction amounts for each territory related to a specific account (Sales Account)
   - **Tables Used**: `GL`
   - **Columns Selected**:
@@ -238,7 +238,7 @@
   - **Use Case**: Analyzing total sales performance across different territories
 
 ### Making-and-Using-SubQuery
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Making-and-Using-SubQuery)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Making-and-Using-SubQuery)  
 - **Purpose of Query 1**: Aggregate total transaction amounts by year
   - **Tables Used**: `GL`
   - **Columns Selected**:
@@ -254,7 +254,7 @@
   - **Use Case**: Analyzing yearly financial trends and total transaction values
 
 ### PIVOT-data-into-Columns
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#PIVOT-data-into-Columns)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#PIVOT-data-into-Columns)  
 - **Purpose of Query 1**: Pivot transaction amounts to display yearly totals in separate columns
   - **Tables Used**: `GL`
   - **Columns Transformed**:
@@ -277,7 +277,7 @@
   - **Use Case**: Facilitates financial analysis of account-level trends over multiple years
 
 ### Create-VIEW
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-VIEW)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-VIEW)  
 - **Purpose of Query 1**: Create a view to store a pivoted summary of transaction amounts by account across multiple years
   - **Tables Used**: `GL`
   - **Columns Transformed**:
@@ -299,7 +299,7 @@
   - **Use Case**: Isolating financial performance for a specific account across multiple years
 
 ### JOIN-Tables
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#JOIN-Tables)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#JOIN-Tables)  
 - **Purpose of Query 1**: Retrieve all records from `GL` with corresponding account details from `COA`
   - **Tables Used**: `GL`, `COA`
   - **Join Applied**:
@@ -341,7 +341,7 @@
   - **Use Case**: Organizing transactions based on financial reporting groups
 
 ### RIGHT-JOIN-LEFT-JOIN-FULL-JOIN
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#RIGHT-JOIN-LEFT-JOIN-FULL-JOIN)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#RIGHT-JOIN-LEFT-JOIN-FULL-JOIN)  
 - **Purpose of Query 1**: Retrieve transactions along with territory details, including unmatched records from `Territory`
   - **Tables Used**: `GL`, `Territory`
   - **Join Applied**:
@@ -387,7 +387,7 @@
   - **Use Case**: Generating fully detailed transaction reports that incorporate geographic, account, and time-based insights
 
 ### FORMAT-numbers
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#FORMAT-numbers)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#FORMAT-numbers)  
 - **Purpose of Query 1**: Retrieve transaction dates while formatting the amount column for readability
   - **Tables Used**: `GL`
   - **Columns Selected**:
@@ -399,7 +399,7 @@
   - **Use Case**: Improving numerical readability for financial reports or data presentation
 
 ### Preparing-Profit-Loss-Statement
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Profit-Loss-Statement)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Profit-Loss-Statement)  
 - **Purpose of Query 1**: Summarize total profit and loss transactions for January 2020
   - **Tables Used**: `GL`, `COA`
   - **Columns Selected**:
@@ -439,7 +439,7 @@
   - **Use Case**: Comparing financial performance by geographic region over time
 
 ### Preparing-Balance-Sheet-Understanding-the-problem
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Balance-Sheet-Understanding-the-problem)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Balance-Sheet-Understanding-the-problem)  
 ## Financial Reporting Differences: Profit & Loss vs. Balance Sheet
 
 - **Profit and Loss Statement**:
@@ -460,7 +460,7 @@
 - Profit and loss statements **reset** each year, showing revenue and expenses for that period.
 - Balance sheets **accumulate** over time, reflecting total financial position.
 ### SQL-for-Cumulative-SUM
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SQL-for-Cumulative-SUM)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#SQL-for-Cumulative-SUM)  
 - **Purpose of Query 1**: Compute cumulative sum of amounts over distinct dates
   - **Tables Used**: `GL`
   - **Columns Selected**:
@@ -496,7 +496,7 @@
   - **Use Case**: Analyzing cumulative financial flows within specific geographic and account segments
 
 ### Cumulative-SUM-Part-2
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Cumulative-SUM-Part-2)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Cumulative-SUM-Part-2)  
 - **Purpose of Query 1**: Compute cumulative sum of amounts partitioned by territory and account over dates
   - **Tables Used**: `GL`
   - **Columns Selected**:
@@ -543,7 +543,7 @@
   - **Use Case**: Understanding how financial figures build up across different years within geographic and account segments
 
 ### Preparing Balance-Sheet
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Balance-Sheet)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Preparing-Balance-Sheet)  
 - **Purpose of Query 1**: Compute cumulative balance sheet values per country and subaccount by year
   - **Tables Used**: `GL`, `Territory`, `COA`
   - **Columns Selected**:
@@ -570,7 +570,7 @@
     - If partitioning occurs at the **lowest class**, all **higher-level categories automatically inherit the partition**
 
 ### Balance-Sheet-Final
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Balance-Sheet-Final)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Balance-Sheet-Final)  
 - **Purpose of Query 1**: Generate a balance sheet report with cumulative totals per subaccount
   - **Tables Used**: `GL`, `Territory`, `COA`
   - **Columns Selected**:
@@ -625,7 +625,7 @@
   - Partitioning at the **lowest class** ensures correct accumulation across all financial classifications.
 
 ### Learning-the-CASE-WHEN-statement
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Learning-the-CASE-WHEN-statement)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Learning-the-CASE-WHEN-statement)  
 - **Purpose of Query 1**: Create separate columns for yearly totals using a `CASE` statement
   - **Tables Used**: `GL`
   - **Columns Created**:
@@ -651,7 +651,7 @@
   - **Use Case**: Understanding account-level financial trends across multiple years and territories
 
 ### Calculating-Sales
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Sales)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Sales)  
 - **Purpose of Query 1**: Calculate yearly net sales and display results row-wise
   - **Tables Used**: `GL`, `COA`
   - **Columns Selected**:
@@ -678,7 +678,7 @@
   - **Use Case**: Simplifying year-over-year comparison of net sales
 
 ### Calculating-Gross-Profit-and-Net-Profit
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Gross-Profit-and-Net-Profit)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Gross-Profit-and-Net-Profit)  
 - **Purpose of Query 1**: Calculate yearly net sales, gross profit, and net profit row-wise
   - **Tables Used**: `GL`, `COA`
   - **Columns Selected**:
@@ -715,7 +715,7 @@
   - **Use Case**: Alternative to pivot tables for handling multi-year comparisons
 
 ### Calculating-EBITDA-Operating-Profit-and-PBIT
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-EBITDA-Operating-Profit-and-PBIT)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-EBITDA-Operating-Profit-and-PBIT)  
 **EBITDA Calculation and Financial Metrics Query**
 **Steps to Calculate EBITDA:**
 1. Start with **Net Sales** = `Sales - Sales Return`.
@@ -745,7 +745,7 @@
 - **Use Case**: Provides a structured financial analysis by breaking down profit generation and operational performance over time
 
 ### Creating-view-for-Gross-Profit-Margin-EBITDA-Operating-Profit-and-PBIT
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Creating-view-for-Gross-Profit-Margin-EBITDA-Operating-Profit-and-PBIT)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Creating-view-for-Gross-Profit-Margin-EBITDA-Operating-Profit-and-PBIT)  
 **Creating Financial Views for Profit & Loss Analysis**
 
 **Purpose of Query 1**: Create a view (`PLValues`) for financial metrics based on yearly data
@@ -797,7 +797,7 @@
 - **Use Case**: Tracks total revenue trends across multiple years
 
 ### Calculating-Ratios
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Ratios)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Ratios)  
 **Profit Margin Analysis**
 
 **Purpose of Query 1**: Calculate profit margins by year
@@ -825,7 +825,7 @@
 - **Use Case**: Evaluating profitability trends within a specific geographic region
 
 ### Calculating-Balance-Sheet-Related-Values
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Balance-Sheet-Related-Values)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Balance-Sheet-Related-Values)  
 **Balance Sheet Analysis Queries**
 
 **Purpose of Query 1**: Compute balance sheet values by year
@@ -859,7 +859,7 @@
 - **Use Case**: Analyzing geographic variations in financial statements across multiple years
 
 ### Compiling-all-key-values-in-one-VIEW
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Compiling-all-key-values-in-one-VIEW)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Compiling-all-key-values-in-one-VIEW)  
 **Creating Balance Sheet and Financial Views**
 
 **Purpose of View 1 (`BSValues`)**: Store balance sheet metrics by country and year
@@ -889,7 +889,7 @@
   - Allows financial comparison between balance sheet and profitability metrics in a unified structure
 
 ### Calculating-Ratios-FinValues-Table
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Ratios-FinValues-Table)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Ratios-FinValues-Table)  
 **Financial Ratio Analysis**
 
 **Purpose of Query**: Compute key financial ratios by year
@@ -914,7 +914,7 @@
   - Assessing financial health through key performance indicators
 
 ### Calculating-further-values-for-Ratios-and-updating-VIEW-PLValues1
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-further-values-for-Ratios-and-updating-VIEW-PLValues1)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-further-values-for-Ratios-and-updating-VIEW-PLValues1)  
 **Updating Profit & Loss View (`PLValues1`)**
 
 **Purpose of View (`PLValues1`)**: Store profit and loss metrics segmented by country and year
@@ -949,7 +949,7 @@
   - Ensuring data integrity and validating financial calculations
 
 ### Calculating-Receivables-and-Payables-and-updating-VIEW-BSValues
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Receivables-and-Payables-and-updating-VIEW-BSValues)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Receivables-and-Payables-and-updating-VIEW-BSValues)  
  **Updating Balance Sheet View (`BSValues`)**
 
 **Purpose of View (`BSValues`)**: Store balance sheet metrics segmented by country and year
@@ -987,7 +987,7 @@
   - Ensuring data integrity and validating balance sheet calculations
 
 ### Updating-VIEW-FinValues
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Updating-VIEW-FinValues)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Updating-VIEW-FinValues)  
  **Updating Financial View (`FinValues`)**
 
  **Purpose of View (`FinValues`)**: Store combined balance sheet and profit & loss metrics by country and year
@@ -1017,7 +1017,7 @@
   - Ensures completeness and accuracy of integrated financial reports
 
 ### Calculating-FinValues-Ratios-of-Interest-Cover-Inventory-Receivables-Payables-Turnover-Period
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-FinValues-Ratios-of-Interest-Cover-Inventory-Receivables-Payables-Turnover-Period)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-FinValues-Ratios-of-Interest-Cover-Inventory-Receivables-Payables-Turnover-Period)  
  **Financial Ratio Analysis with Efficiency Metrics**
 
  **Purpose of Query**: Compute key financial ratios by year, including efficiency metrics
@@ -1050,7 +1050,7 @@
   - Assessing cash flow management through working capital turnover ratios
 
 ### Slicing-Ratios-for-Country
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Slicing-Ratios-for-Country)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Slicing-Ratios-for-Country)  
  **Financial Ratio Analysis for USA**
 
  **Purpose of Query**: Compute key financial ratios for the USA by year
@@ -1085,7 +1085,7 @@
   - Assessing financial health through key performance indicators specific to this geographic region
 
 ### Uploading-CF-Table-to-our-Database
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Uploading-CF-Table-to-our-Database)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Uploading-CF-Table-to-our-Database)  
  **Steps to Import a CSV File into SQL Server Using the Import Wizard**
 
  **Step 1: Open the Import Wizard**
@@ -1116,7 +1116,7 @@
   ```
 
 ### Calculating-Values-for-Cash-Flow-Statement-Part-1
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Values-for-Cash-Flow-Statement-Part-1)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Values-for-Cash-Flow-Statement-Part-1)  
  **Financial Data Transformation Using PIVOT**
 
  **Purpose of Query**: Transform financial data into a structured pivot table format for analysis
@@ -1142,7 +1142,7 @@
 - **Use Case**:
   - Simplifies comparative analysis of financial values across multiple years
 ### Calculating-Cash-Cash-Equivalents-at-the-end-of-the-Year
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Cash-Cash-Equivalents-at-the-end-of-the-Year)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Cash-Cash-Equivalents-at-the-end-of-the-Year)  
  **Cash Flow Analysis Using PIVOT**
 
  **Purpose of Query**: Retrieve cumulative cash flow values categorized by year
@@ -1160,7 +1160,7 @@
 - **Use Case**:
   - Provides a clear breakdown of yearly cash movements, tracking liquidity trends over multiple years
 ### Calculating-Cash-Cash-Equivalents-at-the-start-of-the-year
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Cash-Cash-Equivalents-at-the-start-of-the-year)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Calculating-Cash-Cash-Equivalents-at-the-start-of-the-year)  
  **Carrying Forward Ending Capital as Next Year's Working Capital**
 
  **Purpose of Query**: Compute the starting cash balance for each year based on the previous year's ending balance
@@ -1180,7 +1180,7 @@
   - Ensures financial continuity by recognizing that **"First year's ending capital becomes next year's working capital."**
 
 ### Compiling-Cash-Flow-Statement
-[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Compiling-Cash-Flow-Statement)
+[Click here for code](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Compiling-Cash-Flow-Statement)  
  **Cash Flow and Financial Data Analysis Using PIVOT and UNION**
 
  **Purpose of Query**: Consolidate financial metrics into a pivoted format for multi-year comparisons
@@ -1220,7 +1220,7 @@
 
 ## Acknowledgment
 
-This project incorporates ideas and techniques I learned from [SQL for Financial Data Analysis & Reporting - Zero to Pro] by [Irfan Sharif](https://www.udemy.com/user/irfansharif/). 
+This project incorporates ideas and techniques I learned from [SQL for Financial Data Analysis & Reporting - Zero to Pro] by [Irfan Sharif](https://www.udemy.com/user/irfansharif/)  . 
 **Note**: The course is no longer offered on Udemy. This repository contains my independent implementations.
 ## License
 
