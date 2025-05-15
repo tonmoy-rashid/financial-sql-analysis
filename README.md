@@ -69,9 +69,7 @@
 ## Database Setup
 
 ### Create Database and Import Data from CSV
-[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-Database-and-Import-data-from-csv)
-## Basic SELECT Queries  
-
+[Click here](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#Create-Database-and-Import-data-from-csv) 
 ## SQL Queries
 
 ### Getting Started with SQL SELECT
