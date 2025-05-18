@@ -1224,7 +1224,7 @@ This project incorporates ideas and techniques I learned from [SQL for Financial
 **Note**: The course is no longer offered on Udemy. This repository contains my independent implementations.
 ## License
 
-This project is licensed under the MIT License. See the [resource link](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md#LICENSE) for more details.
+This project is licensed under the MIT License. See the [resource link](./SQL%20for%20Financial%20Data%20Analysis%20\&%20Reporting.md/LICENSE) for more details.
 
 
 
